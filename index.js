@@ -9,6 +9,12 @@ menu_btn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', function () { 
    setTimeout(() => {
     document.querySelector('.loading').classList.add('show');
+
+// scroll reveal animation
+    AOS.init({
+        once: true
+    });
+    
    }, 6000);
 });
 
@@ -67,40 +73,8 @@ let myPieChart = new Chart(ctx, {
     }
 });
 
-
-document.addEventListener("DOMContentLoaded", function() {
  
 
-    // console.log(myPieChart);
-    // document.getElementById('myPieChart').addEventListener('mousemove', function(evt) {
-    //     let activePoints = myPieChart.getElementsAtEvent(evt); 
-    //     let firstPoint = activePoints[0];
-    //     let label = myPieChart.data.labels[firstPoint._index];
-    //     let value = myPieChart.data.datasets[firstPoint._datasetIndex].data[firstPoint._index];
-    //     let total = myPieChart.data.datasets[firstPoint._datasetIndex].data.reduce(function(previousValue, currentValue, currentIndex, array) {
-    //         return previousValue + currentValue;
-    //     });
-    //     let percentage = Math.floor(((value/total) * 100)+0.5);
-    //     let tooltip = document.getElementById('tooltip');
-    //     tooltip.style.display = 'block';
-    //     tooltip.style.left = evt.pageX + 'px';
-    //     tooltip.style.top = evt.pageY + 'px';
-    //     tooltip.innerHTML = label + ': ' + value + ' (' + percentage + '%)';
-    // });
 
-    // document.getElementById('myPieChart').addEventListener('mouseout', function(evt) {
-    //     let tooltip = document.getElementById('tooltip');
-    //     tooltip.style.display = 'none';
-    // });
-}); 
-
-
-
-
-
-// scroll reveal animation
-AOS.init({
-    once: true
-});
 
   

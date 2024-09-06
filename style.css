@@ -310,7 +310,7 @@ li a{
 
 /* service section */
 .services{
-    width: 1400px; 
+    /* width: 1400px;  */
     background: linear-gradient(110.04deg, #31074F -16.76%, #080319 35.79%);
 
 }
@@ -408,6 +408,10 @@ li a{
 .key_feature_container{
     background: linear-gradient(267.82deg, #31074F -21.42%, #000000 122.59%);
     border: 1px solid #8A03B5;
+}
+
+.feature_container{
+    /* background: conic-gradient(from 244.26deg at 13.421% 63.44%, transparent 317deg, rgba(255, 255, 255, 0.46) 335deg, transparent 351deg); */
 }
 
 .key_bg_blur{
