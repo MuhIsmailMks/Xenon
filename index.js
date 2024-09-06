@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         once: true
     });
     
-   }, 6000);
+   }, 60);
 });
 
 // address  
