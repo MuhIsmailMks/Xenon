@@ -5,6 +5,15 @@ menu_btn.addEventListener('click', () => {
     ul.classList.toggle('active')
 })
 
+let particleAmount;
+
+if (window.innerWidth > 1000) {
+    particleAmount = 300;
+} else {
+    particleAmount = 150;
+}
+
+
 // loader
 document.addEventListener('DOMContentLoaded', function () {  
 
@@ -24,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
               "value": 180, // Jumlah partikel (bintang)
               "density": {
                 "enable": true,
-                "value_area": 300 // Kepadatan partikel
+                "value_area": particleAmount // Kepadatan partikel
               }
             },
             "color": {
