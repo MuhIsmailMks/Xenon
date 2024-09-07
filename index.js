@@ -92,9 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
           "retina_detect": true // Deteksi untuk layar retina
         }
       );
-      
-    
    }, 6000);
+   
 });
 
 // address  
