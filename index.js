@@ -8,9 +8,9 @@ menu_btn.addEventListener('click', () => {
 let particleAmount;
 
 if (window.innerWidth > 1000) {
-    particleAmount = 300;
+    particleAmount = 200;
 } else {
-    particleAmount = 150;
+    particleAmount = 100;
 }
 
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
           "particles": {
             "number": {
-              "value": 180, // Jumlah partikel (bintang)
+              "value": 100, // Jumlah partikel (bintang)
               "density": {
                 "enable": true,
                 "value_area": particleAmount // Kepadatan partikel
