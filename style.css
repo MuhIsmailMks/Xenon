@@ -11,7 +11,7 @@
     --white-clr:white;
 
     
-    --borderClr:#8f04f1;
+    --borderClr:#9500ff;
 }
 
 html{
@@ -437,15 +437,15 @@ li a{
     min-width: 1000px;
     height: 500px;
     position: absolute;
-    background: linear-gradient(90deg, var(--borderClr) -6.86%, rgba(115, 115, 115, 0) 42.54%);
+    background: linear-gradient(90deg, var(--borderClr) -9.86%, rgba(115, 115, 115, 0) 42.54%);
     animation: rotate_border 4s infinite linear;
     -webkit-animation: rotate_border 4s infinite linear;
 }
 
 .close_border{
     position: absolute;
-    width: 99.5%;
-    height: 99%;
+    width: 99.9%;
+    height: 99.5%;
     border-radius: inherit;
     background: linear-gradient(267.82deg, #31074F -21.42%, #000000 122.59%);
     
