@@ -822,6 +822,26 @@ li a{
     -o-transform: scale(1);
 }
 
+.title_dapps{ 
+    width: 100%;  
+    background: linear-gradient(90deg, #7A32F6 0%, #DA0DEC 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.choise_container_btn,
+.choise_container{
+    background: linear-gradient(60deg, #7A32F6 0%, #b40bc4 80%);
+}
+
+.choise_btn{
+    background: linear-gradient(160deg, #5b26b8 0%, #b40bc4 80%);
+
+    
+}
+
+ 
+
 .rotate_img{
     animation: rotate_img 20s infinite linear;
     -webkit-animation: rotate_img 20s infinite linear;
