@@ -437,9 +437,15 @@ li a{
     min-width: 1000px;
     height: 500px;
     position: absolute;
-    background: linear-gradient(90deg, var(--borderClr) -9.86%, rgba(115, 115, 115, 0) 42.54%);
+    /* background: linear-gradient(90deg, var(--borderClr) -9.86%, rgba(115, 115, 115, 0) 42.54%); */
     animation: rotate_border 4s infinite linear;
     -webkit-animation: rotate_border 4s infinite linear;
+    background: conic-gradient(
+        from -55deg at 60% 60%,
+        transparent 309deg,
+        var(--borderClr) 335deg,
+        transparent 351deg
+      );
 }
 
 .close_border{
