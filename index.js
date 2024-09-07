@@ -75,6 +75,73 @@ let myPieChart = new Chart(ctx, {
 
  
 
+particlesJS('gradients_home',
+    {
+      "particles": {
+        "number": {
+          "value": 250, // Jumlah partikel (bintang)
+          "density": {
+            "enable": true,
+            "value_area": 300 // Kepadatan partikel
+          }
+        },
+        "color": {
+          "value": "#ffffff" 
+        },
+        "shape": {
+          "type": "star", // Bentuk partikel
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": .5, // Opasitas partikel
+          "random": false
+        },
+        "size": {
+          "value": .5, // Ukuran partikel
+          "random": true
+        },
+        "line_linked": {
+          "enable": false // Tidak ada garis penghubung antar partikel
+        },
+        "move": {
+          "enable": true, // Mengaktifkan gerakan partikel
+          "speed": .1, // Kecepatan gerakan
+          "direction": "left", // Gerakan acak
+          "random": true,
+          "straight": false,
+          "out_mode": "out", // Partikel keluar dari batas layar
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true, // Efek saat kursor di atas partikel
+            "mode": "repulse" // Partikel menjauh saat kursor mendekat
+          },
+          "onclick": {
+            "enable": true, // Efek saat diklik
+            "mode": "push" // Menambahkan lebih banyak partikel saat diklik
+          }
+        },
+        "modes": {
+          "repulse": {
+            "distance": 100, // Jarak partikel menjauh dari kursor
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4 // Jumlah partikel yang ditambahkan saat diklik
+          }
+        }
+      },
+      "retina_detect": true // Deteksi untuk layar retina
+    }
+  );
+  
 
 
   
