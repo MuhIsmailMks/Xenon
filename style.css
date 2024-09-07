@@ -821,3 +821,23 @@ li a{
     -ms-transform: scale(1);
     -o-transform: scale(1);
 }
+
+.rotate_img{
+    animation: rotate_img 20s infinite linear;
+    -webkit-animation: rotate_img 20s infinite linear;
+}
+
+.gradient_bgImg{
+    background: linear-gradient(1.07deg, #000000 12.31%, rgba(115, 115, 115, 0) 32.65%);
+    /* background-color: red; */
+}
+
+@keyframes rotate_img {
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
