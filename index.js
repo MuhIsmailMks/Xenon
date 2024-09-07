@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         once: true
     });
     
-   }, 6);
+   }, 5000);
 });
 
 // address  
@@ -79,7 +79,7 @@ particlesJS('gradients_home',
     {
       "particles": {
         "number": {
-          "value": 250, // Jumlah partikel (bintang)
+          "value": 180, // Jumlah partikel (bintang)
           "density": {
             "enable": true,
             "value_area": 300 // Kepadatan partikel
