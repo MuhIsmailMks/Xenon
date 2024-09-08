@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>DAPPS Xenon AGI</title>
+    <title>Dapp Xenon AGI</title>
 </head>
 <body>
   
@@ -28,17 +28,17 @@
         <!-- bg -->
          <div class="w-full h-[600px] z-0 absolute left-0 top-0 flex justify-center items-center overflow-hidden">
  
-            <div class="w-[1000px] md:w-[2000px] h-[1000px] md:h-[2000px] min-[2000px]:w-[6000px] min-[2000px]:h-[6000px] absolute ">
+            <div class=" w-[1000px] md:w-[2000px] h-[1000px] md:h-[2000px] min-[2000px]:w-[6000px] min-[2000px]:h-[6000px] absolute ">
                 
                 <img src="./images/bg_gradient.jpg" alt="" class="w-full h-full object-cover rotate_img relative">
 
-                <div class="absolute z-[1] w-full h-full bg-[#00000041] blur-2xl left-0 top-0"></div>
+                <div class="absolute z-[1] w-full h-full bg-[#0000001f] blur-2xl left-0 top-0"></div>
           
                
 
             </div>
 
-            <div class="absolute z-[2] w-full h-full gradient_bgImg left-0 top-0 "></div>
+            <div class=" absolute z-[2] w-full h-full gradient_bgImg left-0 top-0 "></div>
 
          </div>
 
@@ -58,7 +58,7 @@
         <!-- search input -->
         <div class="w-full flex justify-center items-center gap-4 my-4 flex-col lg:flex-row">
 
-           <input type="text" name="" id="" class="h-[40px] border-[#a80bb6] border-[.1px] bg-transparent rounded-3xl w-[90%] lg:w-[700px] px-4 text-white" placeholder="Search">
+           <input type="text" name=""  class="h-[40px] border-[#a80bb6] border-[.1px] bg-transparent rounded-3xl w-[90%] lg:w-[700px] px-4 text-white" placeholder="Search" id="searchInput" onkeyup="filterCards()">
 
           <div class="flex flex-col items-center relative z-10 white_btn">
                
@@ -200,7 +200,7 @@
         <!-- GPU content -->
          <div class="flex flex-wrap items-center justify-center w-full gap-4 max-w-[1800px] relative z-0">
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -227,7 +227,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
@@ -238,7 +238,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6X</p>
@@ -251,7 +251,7 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -278,7 +278,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
@@ -289,7 +289,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">10GB GDDR6X</p>
@@ -302,7 +302,7 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -329,7 +329,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">Ampere GA104</p>
@@ -340,7 +340,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">8GB GDDR6X</p>
@@ -353,7 +353,7 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -370,9 +370,9 @@
 
                 <!-- content -->
                 <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
-                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3090</h2>
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon RX 6900 XT</h2>
 
-                    <p class="text-[15px] lg:text-[17px]">Efficient mining for various cryptocurrencies, high power consumption due to its power-hungry nature.</p>
+                    <p class="text-[15px] lg:text-[17px]">Top-tier mining performance, especially for Ethereum.</p>
     
                     <div class="flex justify-between items-center w-full">
                         
@@ -380,10 +380,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">RDNA 2</p>
 
                         </div>
                         
@@ -391,10 +391,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6X</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">16GB GDDR6</p>
 
                         </div>
 
@@ -404,7 +404,8 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -421,9 +422,9 @@
 
                 <!-- content -->
                 <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
-                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3090</h2>
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon RX 6800 XT</h2>
 
-                    <p class="text-[15px] lg:text-[17px]">Efficient mining for various cryptocurrencies, high power consumption due to its power-hungry nature.</p>
+                    <p class="text-[15px] lg:text-[17px]">Great mining performance with lower power consumption compared to NVIDIA counterparts.</p>
     
                     <div class="flex justify-between items-center w-full">
                         
@@ -431,10 +432,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">RDNA 2</p>
 
                         </div>
                         
@@ -442,10 +443,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6X</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">16GB GDDR6</p>
 
                         </div>
 
@@ -455,7 +456,7 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -472,9 +473,9 @@
 
                 <!-- content -->
                 <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
-                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3090</h2>
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA CMP 90HX</h2>
 
-                    <p class="text-[15px] lg:text-[17px]">Efficient mining for various cryptocurrencies, high power consumption due to its power-hungry nature.</p>
+                    <p class="text-[15px] lg:text-[17px]">Designed specifically for crypto mining, optimized for power efficiency.</p>
     
                     <div class="flex justify-between items-center w-full">
                         
@@ -482,7 +483,7 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
@@ -493,10 +494,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6X</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">Not Specified</p>
 
                         </div>
 
@@ -506,7 +507,7 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -523,9 +524,9 @@
 
                 <!-- content -->
                 <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
-                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3090</h2>
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3060 Ti</h2>
 
-                    <p class="text-[15px] lg:text-[17px]">Efficient mining for various cryptocurrencies, high power consumption due to its power-hungry nature.</p>
+                    <p class="text-[15px] lg:text-[17px]">Solid mining capabilities with lower power cost.</p>
     
                     <div class="flex justify-between items-center w-full">
                         
@@ -533,10 +534,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA104</p>
 
                         </div>
                         
@@ -544,10 +545,11 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6X</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">8GB GDDR6X
+                            </p>
 
                         </div>
 
@@ -557,7 +559,7 @@
               
             </div>  
 
-            <div class=" max-w-[90%] w-[390px] sm:w-[47%] lg:w-[380px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
 
                 <!-- bg -->
                  <div class="w-full h-full absolute z-0">
@@ -574,9 +576,9 @@
 
                 <!-- content -->
                 <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
-                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3090</h2>
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA CMP 50HX</h2>
 
-                    <p class="text-[15px] lg:text-[17px]">Efficient mining for various cryptocurrencies, high power consumption due to its power-hungry nature.</p>
+                    <p class="text-[15px] lg:text-[17px]">Mining-focused GPU balancing performance and power.</p>
     
                     <div class="flex justify-between items-center w-full">
                         
@@ -584,7 +586,632 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">GPU</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Not specified</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA CMP 40HX</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Aimed at efficient mining operations with moderate power draw.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Not specified</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon RX 5700 XT</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Popular for mining Ethereum with effective performance.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">RDNA 1</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">8GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 2080 Ti</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Older but still capable for mining activities.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">11GB GDDR6X</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon RX 580 8GB</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Budget-friendly option effective for certain cryptos.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Polaris 20</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">8GB GDDR5</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon VII</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Excellent for mining due to high bandwidth memory despite age.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Vega 20</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">16GB HBM2</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce GTX 1660 Super</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Efficient in mining with good hash rate to power usage ratio.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU116</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">6GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 2070</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Decent mining performance with moderate power consumption.
+                    </p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU116</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">8GB GDDR6                            </p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon RX Vega 56/64</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Good mining performance for power draw despite age.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Vega 10</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">8GB HBM2</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 2060 Super</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Balanced performance for entry-level mining setups.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU106</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">8GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon RX 5600 XT</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Good Ethereum mining performance for its price point</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">RDNA 1</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">6GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GTX 1080 Ti</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Versatile card for mining various cryptocurrencies despite age.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Pascal GP102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">11GB GDDR5X</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA RTX A6000</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Top choice for professional rendering with large datasets and complex scenes.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
                             </div>
 
                             <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
@@ -595,10 +1222,10 @@
                             
                             <div class="flex items-center gap-2">
                                 <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
-                                <p class="font-bold text-[#6fddff] text-[19px] md:text-[20px]">VRAM</p>
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
                             </div>
 
-                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6X</p>
+                            <p class="font-bold text-[14px] md:text-[15px]">48GB GDDR6</p>
 
                         </div>
 
@@ -607,6 +1234,374 @@
                 </div>
               
             </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA Quadro RTX 8000</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Designed for demanding rendering tasks, ample memory.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">48GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon Pro VII</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Preferred for high-resolution rendering projects and computational tasks.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Vega 20</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">16GB HBM2</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA RTX A5000</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Offers a solid balance between performance and memory for rendering.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA104</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA GeForce RTX 3080 Ti</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Excellent performance for 3D rendering and animation.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">12GB GDDR6X</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">AMD Radeon Pro W6800</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Designed for professionals needing high computational power for rendering.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">RDNA 2</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">32GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA RTX A4000</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Suitable for single-GPU rendering setups requiring efficiency and reliability.
+                    </p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Ampere GA106</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">16GB GDDR6X</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+            <div class="gpu-card max-w-[80%] w-[360px] sm:w-[47%] lg:w-[350px] h-[280px] lg:h-[270px] rounded-lg overflow-hidden flex justify-center items-center text-white relative">
+
+                <!-- bg -->
+                 <div class="w-full h-full absolute z-0">
+
+                    <div class="border_gradient">
+                        <div class="bg_border" style="animation-delay: -1s;"></div>
+                        <div class="close_border rounded-lg w-[99%]">
+
+                            <!-- background image card -->
+                            <img src="./images/bg1.png" alt="" class="w-full h-full object-cover rounded-lg ">
+                        </div>
+                      </div>
+                 </div>
+
+                <!-- content -->
+                <div class="w-full h-full relative z-10 flex flex-col justify-between p-5 ">
+                    <h2 class="font-bold text-[22px] lg:text-[25px]">NVIDIA Quadro RTX 6000</h2>
+
+                    <p class="text-[15px] lg:text-[17px]">Known for reliability and performance in professional rendering.</p>
+    
+                    <div class="flex justify-between items-center w-full">
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/gpu.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">GPU</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">Turing TU102</p>
+
+                        </div>
+                        
+                        <div class="flex flex-col items-start">
+                            
+                            <div class="flex items-center gap-2">
+                                <img src="./images/vram.svg" alt="gpu" class="w-[25px] h-auto">
+                                <p class="font-bold text-[#AC0FF6] text-[19px] md:text-[20px]">VRAM</p>
+                            </div>
+
+                            <p class="font-bold text-[14px] md:text-[15px]">24GB GDDR6</p>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+              
+            </div>  
+
+
+
 
          </div>
 
@@ -689,6 +1684,26 @@
                 choiseContainer.classList.remove('active')
             }
         });
+
+   
+
+        // search
+        function filterCards() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.querySelectorAll('.gpu-card');
+
+        cards.forEach(card => {
+            let title = card.querySelector('h2').textContent.toLowerCase();
+            if (title.includes(input)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+    }
+
+        
 
     </script>
 
