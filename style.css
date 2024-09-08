@@ -854,18 +854,15 @@ li a{
     /* background-color: red; */
 }
 
-svg path{
+.dappsSVG svg path{
     transition: fill .3s ease-in-out;
     fill: #091F3B;
 }
 
-svg path.active{
+.dappsSVG svg path.active{
     fill: white;
 }
-
-svg {
-    /* background-color: #f0f0f0; */
-  }
+ 
   
   #text {
     fill: none;
