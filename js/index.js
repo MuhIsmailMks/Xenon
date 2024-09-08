@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "retina_detect": true // Deteksi untuk layar retina
         }
       );
-   }, 6000);
+   }, 60);
    
 });
 
@@ -154,15 +154,13 @@ let ctx = document.getElementById('myPieChart').getContext('2d');
 let myPieChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["LIQUIDITY POOL", "TEAM", "ADVISORIES", "BUY TAX", "SELL TAX"],
+        labels: ["LIQUIDITY POOL", "TEAM", "ADVISORIES"],
         datasets: [{
-            data: [80,5,5,5,5],
+            data: [90,5,5],
             backgroundColor: [
                 '#16c1ec',
                 '#8B93FF', 
-                '#FF9800',
-                '#163dec',
-                '#afff2e',
+                '#FF9800', 
             ],
             borderWidth: 0
         }]
