@@ -832,12 +832,12 @@ li a{
 
 .choise_container_btn,
 .choise_container{
-    background: linear-gradient(60deg, #7A32F6 0%, #b40bc4 80%);
-    /* background: linear-gradient(60deg, #7A32F6 0%, #b40bc4 80%); */
+    background: linear-gradient(60deg, #7A32F6 0%, #0094FF 80%);
+    /* background: linear-gradient(60deg, #7A32F6 0%, #0094FF 80%); */
 }
 
 .choise_btn{
-    background: linear-gradient(160deg, #5b26b8 0%, #b40bc4 80%);
+    background: linear-gradient(160deg, #471d91 0%, #0094FF 80%);
 
     
 }
