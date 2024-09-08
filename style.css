@@ -882,6 +882,8 @@ svg {
     -moz-transition: .5s ease-in-out;
     -ms-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
+
+    user-select: none;
 }
  
 @keyframes draw {
