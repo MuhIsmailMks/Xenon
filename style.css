@@ -179,11 +179,11 @@ li a{
     letter-spacing: .4px;
 }
 
-.community button:nth-child(1){
+.community a:nth-child(1){
     background: linear-gradient(267.82deg, #CF01DD -21.42%, #5907BD 122.59%);
 }
 
-.community button:nth-child(2){
+.community a:nth-child(2){
     border: 1px solid #CF01DD;
     background-color: transparent;
     background-attachment: var(--primary-clr);
@@ -558,16 +558,24 @@ li a{
     border-radius: 0 0 20px 0px;
 }
 
-.green_bg{
+.blue_bg{
     background: linear-gradient(180deg,rgba(7,157,130,.198),#16c1ec);
 }
 
-.blue_bg{
+.orange_bg{
     background: linear-gradient(180deg,#07529833,#FF9800);
 }
 
 .purple_bg{
     background: linear-gradient(180deg,#6c11b433,#8B93FF);
+}
+
+.green_bg{
+    background: linear-gradient(180deg,#6c11b433,#afff2e);
+}
+
+.blueNenon_bg{
+    background: linear-gradient(180deg,#6c11b433,#163dec);
 }
 
 .texation{
@@ -909,7 +917,7 @@ li a{
     -moz-transition: .2s ease-in;
     -ms-transition: .2s ease-in;
     -o-transition: .2s ease-in;
-
+    color: #afff2e;
     cursor: pointer;
 }
 

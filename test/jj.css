@@ -753,11 +753,7 @@ li a{
         height: 45px; 
         width: 320px;
     }
-
-    /* tokenomic */ 
-    .tokenomics{
-        height: 800px;
-    }
+ 
 
     .tokenomics .bg{ 
         top: 0%;
