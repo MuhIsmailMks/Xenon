@@ -36,21 +36,51 @@ if (title.includes(input)) {
 
 }
 
-
-function filterCategory(category) {
 let cards = document.querySelectorAll('.gpu-card');
+function filterCategory(category) {
+  
 
-cards.forEach(card => {
-let cardCategories = card.getAttribute('data-category').split(',').map(cat => cat.trim());
-if (category === 'ALL' || cardCategories.includes(category)) {
-    card.style.display = "block";
-} else {
-    card.style.display = "none";
+    cards.forEach(card => {
+        let cardCategories = card.getAttribute('data-category').split(',').map(cat => cat.trim());
+        if (category === 'ALL' || cardCategories.includes(category)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
 }
-});
-}
+
+const choiseBtn = document.querySelectorAll('.choiseBtn');
+const typeCategory = document.querySelector('.typeCategory');
 
 
+choiseBtn.forEach(btn => {
+    const pBtn = btn.querySelector('p')
+    const iconBtn = btn.querySelector('span')
+    btn.addEventListener('click', () => {
+        let category = btn.getAttribute('data-category');;
+        
+        cards.forEach(card => {
+            let cardCategories = card.getAttribute('data-category').split(',').map(cat => cat.trim());
+            if (category === 'ALL' || cardCategories.includes(category)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        choiseBtn.forEach(otherBtn => {
+            const otherIcon = otherBtn.querySelector('span');
+            otherIcon.classList.add('hidden');  
+        });
+        
+        iconBtn.classList.remove('hidden');
+        typeCategory.innerHTML = pBtn.innerHTML
+    })
+})
+
+
+// particle hero animation
 particlesJS("particles-js", {
 "particles": {
 "number": {

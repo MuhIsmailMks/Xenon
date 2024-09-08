@@ -824,7 +824,8 @@ li a{
 
 .title_dapps{ 
     width: 100%;  
-    background: linear-gradient(90deg, #7A32F6 0%, #DA0DEC 80%);
+    background: linear-gradient(90deg, #f0e8fd 0%, #ffffff 80%);
+    /* background: linear-gradient(90deg, #7A32F6 0%, #DA0DEC 80%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
@@ -832,6 +833,7 @@ li a{
 .choise_container_btn,
 .choise_container{
     background: linear-gradient(60deg, #7A32F6 0%, #b40bc4 80%);
+    /* background: linear-gradient(60deg, #7A32F6 0%, #b40bc4 80%); */
 }
 
 .choise_btn{
