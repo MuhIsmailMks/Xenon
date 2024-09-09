@@ -193,3 +193,10 @@ let myPieChart = new Chart(ctx, {
 
 
   
+
+document.querySelector('a').addEventListener('click', function(event) {
+  event.preventDefault(); // Mencegah link melakukan navigasi default
+  const newUrl = this.href.replace('.html', ''); // Menghapus '.html' dari URL
+  history.pushState(null, '', newUrl); // Mengubah URL di address bar
+  window.location.href = this.href; // Melakukan navigasi ke halaman yang dituju
+});
