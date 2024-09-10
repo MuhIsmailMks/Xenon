@@ -928,7 +928,11 @@ li a{
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
 }
- 
+
+.clickBtn div{
+    background: linear-gradient(91.23deg, #0094FF -3.71%, rgba(0, 89, 153, 0) 108.96%);
+
+}
 
 .clickBtn:active img{
     transform: scale(.9);
