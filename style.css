@@ -928,6 +928,15 @@ li a{
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
 }
+ 
+
+.clickBtn:active img{
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
   
 
 @keyframes rotate_img {
