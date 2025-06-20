@@ -13,11 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"
-    integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-
     <!-- google fonts links -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,8 +22,10 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Dapps Xenon AGI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
 </head>
 <body>
+ 
    
     <div class="w-full h-auto bg-black min-h-[100vh] flex flex-col items-center relative max-w-[100%] overflow-hidden">
  
@@ -59,12 +56,12 @@
                 <img src="./images/logo.png" alt="" class="w-[40px] h-auto object-contain">
             </a>
 
-            <button class="flex justify-center items-center gap-2 md:gap-4 clickBtn cursor-pointer duration-200 hover:scale-95">
+            <button id="connectBtn" class="flex justify-center items-center gap-2 md:gap-4 clickBtn cursor-pointer duration-200 hover:scale-95">
                <span>
                 <img src="./images/wallet.png" alt="wallet" class="w-[45px] lg:w-[60px] h-auto  duration-150 rounded-full">
                </span>
             <div class="py-1 px-4 rounded-xl border-black border-[1px]">
-                <p class="text-[#ffffff] font-bold text-[17px] md:text-[22px]">WalletConnect</p>
+                <p class="text-[#ffffff] font-bold text-[17px] md:text-[22px]">WalletConnect</p> 
             </div>
             </button>
 
@@ -1691,21 +1688,19 @@
                     </span>
                 </div>
 
-            </section>
-
-         
+            </section> 
 
 
-    </div>
+    </div> 
 
     
     <!-- aos js scroll animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
-
-    <script src="./js/dapps.js"></script>
  
 
-   
+
+    <script src="./js/dapps.js"></script>
+  
 
 </body>
 </html>
