@@ -5,6 +5,7 @@ menu_btn.addEventListener('click', () => {
     ul.classList.toggle('active')
 })
 
+// animation
 let particleAmount;
 
 if (window.innerWidth > 1000) {
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
           "retina_detect": true // Deteksi untuk layar retina
         }
       );
-   }, 6000);
+   }, 60);
    
 });
 
@@ -113,40 +114,36 @@ addressContainer.addEventListener('click', function() {
 
 
 // video
-document.addEventListener("DOMContentLoaded", function() {
-    let videoServices = document.querySelectorAll('.video_service');
-
-    function playVideo(video) {
+  document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll(".video_service");
+ 
+    videos.forEach((video) => {
+      video.muted = true;
+      video.controls = false;
+ 
+      video.addEventListener("loadeddata", () => {
         if (video.paused) {
-            video.play().catch(function(error) {
-                console.error("Video play was prevented:", error);
-            });
+          video.play().catch((err) => console.error("Play error:", err));
         }
-    }
- 
-    for (let video of videoServices) { 
-        video.addEventListener('play', function() {
-            video.muted = true;
-        });
- 
-        video.addEventListener('loadeddata', function() {
-            playVideo(video);
-        });
- 
-        video.muted = true;
-        video.controls = false;
-    }
-});
- 
-document.addEventListener('DOMContentLoaded', function() {
-    let videos = document.querySelectorAll('.video_service');
-    videos.forEach(function(video) {
-        video.addEventListener('canplaythrough', function() {
-            video.play();
-        }, true);
+      });
     });
-});
+ 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target;
+          if (entry.isIntersecting) {
+            video.play().catch((err) => console.error("Play failed:", err));
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.3 }  
+    );
 
+    videos.forEach((video) => observer.observe(video));
+  });
 
 // chart 
 let ctx = document.getElementById('myPieChart').getContext('2d');

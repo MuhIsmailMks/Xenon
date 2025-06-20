@@ -140,11 +140,11 @@ particlesJS("particles-js", {
         },
         "move": {
             "enable": true,
-            "speed": 6,  // Kecepatan partikel agar terlihat seperti bintang jatuh
+            "speed": 6,  
             "direction": "none",
             "random": true,
             "straight": false,
-            "out_mode": "out",  // Partikel akan keluar dari layar saat jatuh
+            "out_mode": "out",  
             "attract": {
                 "enable": false,
                 "rotateX": 600,
