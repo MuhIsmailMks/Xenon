@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css, image, google font, aos animation -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 
     <!-- google fonts links -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <!-- chart js --> 
+
+     <!-- chart js --> 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
@@ -25,211 +26,198 @@
     <main class="container_site w-full max-w-[100%] overflow-hidden relative h-auto">
 
 
-    <!-- loading site -->
-    <div class="loading fixed z-[9999] w-full h-full flex justify-center items-center">  
-
-        <video autoplay loop muted playsinline >
-            <source src="./videos/loader.mp4" type="video/mp4" class="object-cover w-full h-full absolute left-0 top-0 z-[9999]">
+        <!-- Loading Site -->
+        <div class="loading fixed inset-0 z-[9999] flex items-center justify-center">
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover z-[9999]"
+            aria-hidden="true"
+        >
+            <source src="./videos/loader.mp4" type="video/mp4" />
         </video>
-        
-    </div>
-
-    <!-- navbar -->
-    <nav class="px-6 relative flex items-center justify-between ">
-
-        <div class="acceesibility h-full flex items-center gap-4">
-            <div class="menu-btn flex lg:hidden ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="white" fill-rule="evenodd" d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1zM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5" clip-rule="evenodd"/></svg>
-            </div>
-            <div class="logo h-full lg:w-auto    flex justify-center items-center rounded-lg overflow-hidden gap-4">
-                <img src="./images/logo.png" alt="logo" class="w-auto object-contain h-[30px] xl:h-[50px] ">
-                <p class="logo-text text-[white] text-[1rem] xl:text-[1.5rem]">Xenon AGI</p>
-            </div>
         </div>
-     
-        <ul class="flex flex-col justify-center gap-5 absolute px-4 py-6 duration-200 ease-in-out z-[999] lg:relative lg:bg-transparent lg:flex-row lg:top-0">
+
+        <!-- Navbar -->
+        <nav class="relative flex items-center justify-between px-6">
+
+        <!-- Left: Accessibility & Logo -->
+        <div class="accessibility flex h-full items-center gap-4">
+
+            <!-- Mobile Menu Button -->
+            <div class="menu-btn flex lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15" aria-hidden="true">
+                <path fill="white" fill-rule="evenodd" d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1zM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5" clip-rule="evenodd" />
+            </svg>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo flex h-full items-center gap-4 overflow-hidden rounded-lg lg:w-auto">
+            <img src="./images/logo.png" alt="Xenon AGI Logo" class="h-[30px] w-auto object-contain xl:h-[50px]" />
+            <p class="logo-text text-[1rem] text-white xl:text-[1.5rem]">Xenon AGI</p>
+            </div>
+
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="absolute z-[999] flex flex-col justify-center gap-5 px-4 py-6 duration-200 ease-in-out lg:relative lg:top-0 lg:flex-row lg:bg-transparent">
             <li><a href="#home">Home</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#feature">Feature</a></li>
             <li><a href="#tokenomics">Tokenomics</a></li>
             <li><a href="#roadmap">Roadmap</a></li>
-        </ul> 
+        </ul>
 
+        <!-- DApp Button -->
         <a href="./dapps.html" class="relative">
             <button class="app-btn relative flex items-center justify-center">
-                <span class="z-10 font-bold">DApp</span>  
+            <span class="z-10 font-bold">DApp</span>
             </button>
         </a>
-        
-    </nav>
 
-    <!-- home section -->
-    <section id="home" class="home h-auto relative text-center classad pt-8 max-w-full"> 
-        <div class="gradients absolute">
-            <div id="gradients_home" class="  rotate-[10deg] lg:rotate-[20deg] w-[70%] lg:w-[50%] absolute left-[-40%] lg:left-[-20%] top-0 h-full "></div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="home relative pt-8 text-center w-full h-auto">
+        <!-- Gradient Background -->
+        <div class="gradients absolute top-0 left-0 h-full w-full overflow-hidden pointer-events-none">
+            <div id="gradients_home" class="rotate-[10deg] lg:rotate-[20deg] w-[70%] lg:w-[50%] absolute left-[-40%] lg:left-[-20%] top-0 h-full"></div>
         </div>
-        <div class="content relative w-full h-auto z-20">
-    
+
+        <!-- Main Content -->
+        <div class="content relative z-20 w-full h-auto">
+
+            <!-- Heading -->
             <div class="flex flex-col items-center gap-10 xl:gap-5 mb-10">
-                <div class="title">
-                    <h4 class="text-xl md:text-5xl font-normal animated1slow" data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="6500">Unlocking Seamless GPU-Power</h4>
-                    <h2 class="font-bold tracking-wide text-4xl md:text-7xl xl:text-[6rem] animated1slow"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                    data-aos-delay="6500">Xenon AGI</h2>
-                </div>
-              
+            <div class="title">
+                <h4 class="animated1slow text-xl md:text-5xl font-normal" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="6500">
+                Unlocking Seamless GPU-Power
+                </h4>
+                <h2 class="animated1slow font-bold tracking-wide text-4xl md:text-7xl xl:text-[6rem]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="6500">
+                Xenon AGI
+                </h2>
+            </div>
             </div>
 
-            <div class="about relative w-full flex justify-center items-center xl:mt-32 lg:h-[60vw] xl:h-[50vw] 2xl:max-h-[1000px]"> 
-                <div class="bg_video w-full max-w-[1900px] absolute l-[0] top-0 z-0">
-                    <video class="video_service w-[100%] h-[600px] object-cover lg:h-auto xl:h-auto xl:w-full opacity-[25%]"   autoplay loop muted playsinline>
-                        <source src="./videos/CSP(3).mp4" type="video/mp4" > 
-                    </video>
-                </div>
-                
-                <div class="bg_animation absolute w-full h-full max-w-[99%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center overflow-hidden"> 
-                    <img src="./images/rotate_hero.png" alt="" class="absolute select-none greenRing h-full w-full object-contain opacity-[80%]"> 
-                </div>
+            <!-- Hero Area with Video and Animation -->
+            <div class="about relative w-full flex justify-center items-center xl:mt-32 lg:h-[60vw] xl:h-[50vw] 2xl:max-h-[1000px]">
+            <!-- Background Video -->
+            <div class="bg_video absolute top-0 left-0 w-full max-w-[1900px] z-0">
+                <video class="video_service w-full h-[600px] lg:h-auto object-cover opacity-[25%]" autoplay loop muted playsinline>
+                <source src="./videos/CSP(3).mp4" type="video/mp4" />
+                </video>
+            </div>
 
-                <div class="content_about  overflow-hidden relative max-w-[90%] glass-effect rounded-lg flex items-center justify-center flex-col px-4 py-5 gap-5 lg:px-6 lg:mt-10 last:py-10 h-auto lg:h-[450px] lg:rounded-2xl ">
+            <!-- Rotating Image -->
+            <div class="bg_animation absolute top-1/2 left-1/2 w-full h-full max-w-[99%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center overflow-hidden">
+                <img src="./images/rotate_hero.png" alt="Rotating ring animation" class="greenRing h-full w-full object-contain opacity-[80%] select-none" />
+            </div>
 
-                    <p class="text-sm md:text-xl  font-semibold animated1"
-                    data-aos="fade-down"
-                    data-aos-duration="1000"
-                    >
-                    Xenon integrates innovation with reliability in AGI, enhancing GPU-digital interactions through advanced protocols. Elevate your experience with our cutting-edge technology.
-                    </p>
+            <!-- Description Box -->
+            <div class="content_about relative max-w-[90%] glass-effect rounded-lg flex flex-col items-center justify-center px-4 py-5 gap-5 lg:px-6 lg:mt-10 lg:h-[450px] lg:rounded-2xl overflow-hidden">
+                <p class="animated1 text-sm md:text-xl font-semibold" data-aos="fade-down" data-aos-duration="1000">
+                Xenon integrates innovation with reliability in AGI, enhancing GPU-digital interactions through advanced protocols. Elevate your experience with our cutting-edge technology.
+                </p>
 
-                    <div class="relative flex max-w-full gap-5 flex-wrap items-center justify-center w-full">
-
-                        <div class="glass-effect2 animated1  relative rounded-xl flex flex-col  items-center gap-3 py-4"
-                        data-aos="fade-right"
-                        data-aos-duration="1000" data-aos-delay="400">
-                            <div class="bg w-full rounded-xl absolute z-10 h-full "></div>
-                            <div class="borders absolute w-full h-full">
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                               
-                            </div> 
-                            <div class="icon flex justify-center z-10">
-                               <div class="w-[90%]">
-                                <img src="./videos/ServerRentals.gif">
-                               </div>
-                             </div>
-                             <p class="text-xs md:text-sm z-20">AI Server Rentals</p>
-                        </div>
-
-                        <div class="glass-effect2 animated1  relative rounded-xl flex flex-col items-center gap-3 py-4"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="300">
-                            <div class="bg w-full rounded-xl absolute z-10 h-full "></div>
-                            <div class="borders absolute w-full h-full">
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                               
-                            </div>
-                            <div class="icon flex justify-center z-10">
-                                <div class="w-[90%]">
-                                    <img src="./videos/CloudComputing.gif"   >
-                                </div>
-                              </div>
-                             <p class="text-xs md:text-sm z-20">AI Cloud Computing</p>
-                        </div>
-
-                        <div class="glass-effect2 animated1  relative rounded-xl flex flex-col items-center gap-3 py-4"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="200">
-                            <div class="bg w-full rounded-xl absolute z-10 h-full "></div>
-                            <div class="borders absolute w-full h-full">
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                               
-                            </div>
-                            <div class="icon flex justify-center z-10">
-                                <div class="w-[90%]">
-                                    <img src="./videos/NetworkResources.gif" >
-                                </div>
-                              </div>
-                             <p class="text-xs md:text-sm z-20">AI Network
-                                Resources</p>
-                        </div>
-
-                        <div class="glass-effect2 animated1  relative rounded-xl flex flex-col items-center gap-3 py-4"
-                        data-aos="fade-right"
-                        data-aos-duration="1000"
-                        data-aos-delay="100"
-                       >
-                            <div class="bg w-full rounded-xl absolute z-10 h-full "></div>
-                            <div class="borders absolute w-full h-full">
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                                <span class="w-10 h-10 z-[1] absolute rounded-xl"></span>
-                               
-                            </div>
-                            <div class="icon flex justify-center z-10">
-                                <div class="w-[90%]">
-                                    <img src="./videos/GPUcomputingPower.gif">
-                                </div>
-                              </div>
-                             <p class="text-xs md:text-sm z-20">GPU computing
-                                Power</p>
-                        </div>
-
+                <!-- Feature Cards -->
+                <div class="relative flex flex-wrap justify-center items-center gap-5 w-full max-w-full">
+                <!-- Repeatable Card Component -->
+                <!-- Card 1 -->
+                <div class="glass-effect2 animated1 relative rounded-xl flex flex-col items-center gap-3 py-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="bg absolute z-10 w-full h-full rounded-xl"></div>
+                    <div class="borders absolute w-full h-full">
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
                     </div>
-
-                    <p class="leading-[1.2] text-xs md:text-[20px]  animated1 "
-                    data-aos="fade-up"
-                    data-aos-duration="1000">
-                    Xenon's protocol revolutionizes GPU performance in rendering, mining, and deep learning, offering unparalleled efficiency, scalability, and security.
-                    </p>
-                 
+                    <div class="icon z-10 flex justify-center w-[90%]">
+                    <img src="./videos/ServerRentals.gif" alt="AI Server Rentals" />
+                    </div>
+                    <p class="text-xs md:text-sm z-20">AI Server Rentals</p>
                 </div>
 
+                <!-- Card 2 -->
+                <div class="glass-effect2 animated1 relative rounded-xl flex flex-col items-center gap-3 py-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="bg absolute z-10 w-full h-full rounded-xl"></div>
+                    <div class="borders absolute w-full h-full">
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    </div>
+                    <div class="icon z-10 flex justify-center w-[90%]">
+                    <img src="./videos/CloudComputing.gif" alt="AI Cloud Computing" />
+                    </div>
+                    <p class="text-xs md:text-sm z-20">AI Cloud Computing</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-effect2 animated1 relative rounded-xl flex flex-col items-center gap-3 py-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="bg absolute z-10 w-full h-full rounded-xl"></div>
+                    <div class="borders absolute w-full h-full">
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    </div>
+                    <div class="icon z-10 flex justify-center w-[90%]">
+                    <img src="./videos/NetworkResources.gif" alt="AI Network Resources" />
+                    </div>
+                    <p class="text-xs md:text-sm z-20">AI Network Resources</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-effect2 animated1 relative rounded-xl flex flex-col items-center gap-3 py-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="bg absolute z-10 w-full h-full rounded-xl"></div>
+                    <div class="borders absolute w-full h-full">
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    <span class="w-10 h-10 absolute rounded-xl z-[1]"></span>
+                    </div>
+                    <div class="icon z-10 flex justify-center w-[90%]">
+                    <img src="./videos/GPUcomputingPower.gif" alt="GPU Computing Power" />
+                    </div>
+                    <p class="text-xs md:text-sm z-20">GPU Computing Power</p>
+                </div>
+                </div>
+
+                <!-- Secondary Description -->
+                <p class="animated1 leading-[1.2] text-xs md:text-[20px]" data-aos="fade-up" data-aos-duration="1000">
+                Xenon's protocol revolutionizes GPU performance in rendering, mining, and deep learning, offering unparalleled efficiency, scalability, and security.
+                </p>
+            </div>
             </div>
 
-            <div class="flex flex-col  justify-center items-center gap-4 h-[400px] xl:mt-11">
-                <p class="text-sm lg:text-lg opacity-90 w-[390px] lg:w-[490px] max-w-[80%] md:my-5 animated2"
-                data-aos="fade-up"
-                data-aos-duration="1000">
+            <!-- CTA Section -->
+            <div class="flex flex-col items-center justify-center gap-4 h-[400px] xl:mt-11">
+            <p class="animated2 text-sm lg:text-lg opacity-90 w-[390px] lg:w-[490px] max-w-[80%] md:my-5" data-aos="fade-up" data-aos-duration="1000">
                 Efficiency Elevated, Connectivity Simplified. Advancing Your GPU Experience with Artificial General Intelligence, One Protocol at a Time.
-                    </p>
-                <div class="address z-20 relative flex flex-col justify-center lg:flex-row  items-center gap-2 mb-5">
-                    <div class="address_form rounded-xl relative flex flex-col items-start px-5 py-2 text-left cursor-pointer max-w-full overflow-hidden lg:px-7 lg:rounded-2xl animated3"
-                    data-aos="fade-right"
-                    data-aos-duration="700">
-                        <p class="text-[.7rem] md:text-sm">Contact Address</p>
-                        <span class="text-[.7rem] md:text-sm xl:text-xl" >0x000000000000000000000000000000000000dEaD</span>
-                    </div>
-                    <button class="address-btn  rounded-md bg-white p-3 hover_btn duration-200 lg:rounded-2xl animated4"
-                    data-aos="fade-left"
-                    data-aos-duration="1200">
-                        <img src="./images/button1.png" alt="" class="w-7">
-                    </button>
+            </p>
+
+            <!-- Address Box -->
+            <div class="address relative z-20 flex flex-col lg:flex-row items-center justify-center gap-2 mb-5">
+                <div class="address_form animated3 relative flex flex-col items-start px-5 py-2 lg:px-7 rounded-xl lg:rounded-2xl text-left cursor-pointer max-w-full overflow-hidden" data-aos="fade-right" data-aos-duration="700">
+                <p class="text-[.7rem] md:text-sm">Contact Address</p>
+                <span class="text-[.7rem] md:text-sm xl:text-xl">0x000000000000000000000000000000000000dEaD</span>
                 </div>
-                <div class="community flex items-center gap-5">
-                    <a href="https://t.me/XenonAGI" target="_blank" class="text-white duration-200 rounded-lg hover_btn ease-in-out px-6 py-2 uppercase font-bold animated3"
-                    data-aos="fade-right"
-                    data-aos-duration="1200">community</a>
-                    <a href="https://app.xenon-agi.tech/" class="text-white duration-200 rounded-lg hover_btn ease-in-out px-6 py-2 uppercase font-bold animated3" data-aos="fade-left"
-                    data-aos-duration="1200">platform</a>
-                </div>
+                <button class="address-btn animated4 rounded-md lg:rounded-2xl bg-white p-3 hover_btn duration-200" data-aos="fade-left" data-aos-duration="1200">
+                <img src="./images/button1.png" alt="Copy address button" class="w-7" />
+                </button>
             </div>
 
+            <!-- Community Links -->
+            <div class="community flex items-center gap-5">
+                <a href="https://t.me/XenonAGI" target="_blank" class="animated3 px-6 py-2 rounded-lg text-white font-bold uppercase duration-200 ease-in-out hover_btn" data-aos="fade-right" data-aos-duration="1200">Community</a>
+                <a href="https://app.xenon-agi.tech/" class="animated3 px-6 py-2 rounded-lg text-white font-bold uppercase duration-200 ease-in-out hover_btn" data-aos="fade-left" data-aos-duration="1200">Platform</a>
+            </div>
+            </div>
         </div>
-    </section>
+        </section>
+
     
     <!-- service section -->
     <section id="service" class="services relative   w-full flex items-center flex-col gap-12 px-6 mx-auto py-[5rem] ">
