@@ -19,7 +19,7 @@ if (window.innerWidth > 1000) {
 document.addEventListener('DOMContentLoaded', function () {
 
   setTimeout(() => {
-    document.querySelector('.loading').classList.add('show');
+    // document.querySelector('.loading').classList.add('show');
 
     // scroll reveal animation
     AOS.init({
